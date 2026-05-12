@@ -15,7 +15,7 @@ A modern, fully responsive, and feature-rich e-commerce website for premium hand
 - 📞 **Contact Form** - Send messages to admin
 
 ### Admin Features
-- 🔐 **Secure Admin Dashboard** - Accessible at `/admin.html`
+- 🔐 **Secure Admin Dashboard** - Accessible via the profile dropdown or directly at `frontend/admin.html`
 - ➕ **Add Products** - Upload products with local image uploads
 - 🖼️ **Gallery Management** - Upload and manage furniture gallery images
 - 📧 **Message Management** - View and respond to customer enquiries
@@ -25,20 +25,24 @@ A modern, fully responsive, and feature-rich e-commerce website for premium hand
 ### Technical Features
 - 📱 **Fully Responsive** - Works on desktop, tablet, and mobile
 - 🎨 **Modern Design** - Beautiful gradients, animations, and transitions
-- 💾 **Local Storage** - All data saved in browser (no server required)
-- ⚡ **Fast & Lightweight** - Pure HTML, CSS, and JavaScript
+- 💾 **Database & Local Storage** - Uses MongoDB for persistence with local storage fallbacks
+- ⚡ **Modern Stack** - Node.js/Express backend, Vanilla JS frontend with **Outfit** typography
 - 🔒 **Secure Authentication** - Simple but effective user authentication
 
 ## 📂 File Structure
 
 ```
 Maheswari Industries/
-├── index.html          # Main home page
-├── admin.html          # Admin dashboard page
-├── css/
-│   └── style.css       # All styles and responsive design
-└── js/
-    └── script.js       # All JavaScript functionality
+├── frontend/             # All client-side files
+│   ├── index.html        # Main home page
+│   ├── admin.html        # Admin dashboard
+│   ├── cart.html         # Shopping cart page
+│   ├── orders.html       # Order tracking page
+│   ├── product-detail.html # Single product view
+│   ├── css/              # Stylesheets
+│   ├── js/               # Frontend logic
+│   └── img/              # static assets (Logo, etc)
+└── backend/              # Node.js Express server & Database models
 ```
 
 ## 🔑 Default Login Credentials
@@ -114,7 +118,7 @@ Maheswari Industries/
 ## 🎨 Customization
 
 ### Change Business Details
-Edit footer in `index.html` and `admin.html` to update:
+Edit footer in `index.html` and `frontend/admin.html` to update:
 - Contact information
 - Business address
 - Phone numbers
@@ -122,14 +126,12 @@ Edit footer in `index.html` and `admin.html` to update:
 - Social media links
 
 ### Change Colors
-Edit CSS variables in `css/style.css`:
+Edit CSS variables in `frontend/css/style.css`:
 ```css
 :root {
-    --primary: #6b4b2b;           /* Main brown color */
-    --primary-dark: #543a21;       /* Darker brown */
-    --accent: #d4a373;             /* Gold accent */
-    /* ... more colors ... */
-}
+    --primary: #8B4513;           /* Saddle Brown */
+    --accent: #D4A574;            /* Tan Accent */
+    --font-main: 'Outfit', sans-serif;
 ```
 
 ### Add More Product Categories
@@ -190,6 +192,6 @@ This website is created for Maheswari Industries and can be freely modified as n
 
 ---
 
-**Version:** 1.0  
-**Last Updated:** November 2025  
-**Built with:** HTML5, CSS3, JavaScript (Vanilla)
+**Version:** 2.0  
+**Last Updated:** March 2026  
+**Built with:** Node.js, Express, MongoDB, Vanilla JS, Outfit Font

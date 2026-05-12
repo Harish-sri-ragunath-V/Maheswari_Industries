@@ -9,10 +9,12 @@
 
 ## 🚀 How to Run the Website
 
-### Option 1: Direct File Open
-1. Navigate to the project folder: `d:\PROJECT\Maheswari Industries\`
-2. Double-click on `index.html` to open in default browser
-3. Website will load immediately
+### Option 1: Development Server (Recommended)
+1. Navigate to the project folder: `d:\MENTOR\Consultany Projects\Maheswari Industries\`
+2. Open a terminal in the `backend` directory.
+3. Run `npm install` to install dependencies.
+4. Run `npm start` or `node server.js` to start the backend.
+5. Open `frontend/index.html` in your browser.
 
 ### Option 2: Using VS Code Live Server
 1. Install "Live Server" extension in VS Code
@@ -23,7 +25,7 @@
 ### Option 3: Using Python Server (if Python installed)
 ```bash
 # Navigate to project directory
-cd "d:\PROJECT\Maheswari Industries"
+cd "d:\MENTOR\Consultany Projects\Maheswari Industries\backend"
 
 # For Python 3
 python -m http.server 8000
@@ -37,16 +39,14 @@ Then open: `http://localhost:8000`
 
 ```
 Maheswari Industries/
-├── index.html           # Main website home page
-├── admin.html           # Admin dashboard (separate page)
-├── guide.html           # Quick start and help guide
-├── README.md            # Full documentation
-├── FEATURES.md          # Detailed features list
-├── SETUP.md             # This file
-├── css/
-│   └── style.css        # All styling and animations
-└── js/
-    └── script.js        # All functionality
+├── frontend/            # All client-side files
+│   ├── index.html       # Landing page
+│   ├── css/style.css    # Modern styles (Outfit Font)
+│   └── js/script.js     # Core logic
+├── backend/             # Node.js Express server
+│   ├── server.js        # API entry point
+│   └── models/          # Database schemas
+└── SETUP.md             # This file
 ```
 
 ## 🔑 Initial Setup
@@ -76,7 +76,7 @@ To start fresh and clear all saved data:
 2. Use credentials:
    - Username: `admin`
    - Password: `admin123`
-3. Click "Admin Dashboard" button or go to `/admin.html`
+3. Click "Admin Dashboard" button or go to `/frontend/admin.html`
 
 ### Features to Try
 - [ ] Search for products
@@ -96,7 +96,7 @@ To start fresh and clear all saved data:
 ### Change Business Details
 Edit these files to update company information:
 
-**Footer Content** - In `index.html` and `admin.html`:
+**Footer Content** - In `index.html` and `frontend/admin.html`:
 ```html
 <!-- Change contact details -->
 <li><i class="fas fa-map-marker-alt"></i> Your Address</li>
@@ -108,10 +108,9 @@ Edit these files to update company information:
 In `css/style.css`, update the `:root` variables:
 ```css
 :root {
-    --primary: #6b4b2b;        /* Main color - Brown */
-    --primary-dark: #543a21;    /* Dark variant */
-    --accent: #d4a373;          /* Accent color - Gold */
-    --accent-light: #e6c4a3;   /* Light variant */
+    --primary: #8B4513;        /* Saddle Brown */
+    --accent: #D4A574;         /* Tan */
+    --font-main: 'Outfit', sans-serif;
     /* ... other colors ... */
 }
 ```
@@ -292,6 +291,6 @@ After setup, verify these work:
 
 ---
 
-**Version:** 1.0  
-**Last Updated:** November 2025  
+**Version:** 2.0  
+**Last Updated:** March 2026  
 **Status:** Ready for Use ✅

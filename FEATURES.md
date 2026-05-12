@@ -67,7 +67,7 @@
 
 ### 6. ✅ Separate Admin Dashboard Page
 - **Access:**
-  - File: `/admin.html`
+  - File: `frontend/admin.html`
   - Login Required: Yes (admin credentials only)
   - Automatic redirect if not logged in
 
@@ -149,19 +149,20 @@
 - Smooth animations and transitions
 - Icon usage throughout (FontAwesome)
 - Professional color scheme
+- Modern Typography: **Outfit**
 - Beautiful hover effects
 - Shadow effects for depth
 
 ## 📊 Data Structure
 
-### Stored Keys in LocalStorage
-1. **mi_products_v1** - All product data
-2. **mi_gallery_v1** - Gallery images
-3. **mi_messages_v1** - Customer enquiries and contact messages
-4. **mi_users_v1** - Registered user accounts
-5. **mi_session_v1** - Current user session
-6. **mi_cart_v1** - Shopping cart items
-7. **mi_wishlist_v1** - User wishlist (reserved)
+### Stored Keys (LocalStorage / Cache)
+1. **mi_products_v2** - Product cache
+2. **mi_gallery_v2** - Gallery cache
+3. **mi_messages_v2** - Message cache
+4. **mi_users_v2** - User sessions
+5. **mi_session_v2** - Active session
+6. **mi_cart_v2** - Shopping cart
+7. **mi_wishlist_v2** - User wishlist
 
 ## 🔐 Security Features
 - Admin access requires username/password
@@ -172,7 +173,7 @@
 ## 🎨 Design Highlights
 - Modern gradient color scheme (Brown & Gold)
 - Smooth transitions and animations
-- Professional typography (Playfair Display + Poppins)
+- Professional typography (**Outfit**)
 - Consistent spacing and alignment
 - Accessible color contrast
 - Icon-rich interface
@@ -205,12 +206,11 @@
 ## File Structure Summary
 
 ```
-index.html          - Main home page with all customer features
-admin.html          - Admin dashboard for managing site
-guide.html          - Quick start and help guide
-css/style.css       - All styling and responsive design
-js/script.js        - All JavaScript functionality
-README.md           - Documentation
+frontend/index.html          - Main landing page
+frontend/admin.html          - Admin dashboard
+frontend/css/style.css       - All styling
+frontend/js/script.js        - Core functionality
+backend/server.js            - Node.js API server
 ```
 
 ## Testing Checklist
